@@ -1,5 +1,5 @@
 const request = require('../request')
-const host = null // 'http://localhost:9000'
+const host = process.env.RHOST
 
 module.exports = () => {
 	const proxy = new Proxy(() => {}, {
