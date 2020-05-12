@@ -102,6 +102,9 @@ const single = (id, format) => {
 		// 	jsonBody.req_0.data.midurlinfo[0].vkey ||
 		// 	(jsonBody.req_0.data.testfile2g.match(/vkey=(\w+)/) || [])[1]
 		// return concatenate(vkey)
+		if (jsonBody.req_0.data.midurlinfo[0].purl === "") {
+			return false
+		}
 		return jsonBody.req_0.data.sip[0] + jsonBody.req_0.data.midurlinfo[0].purl
 	})
 }
