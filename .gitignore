@@ -1,3 +1,7 @@
+ca.key
+ca.srl
+server.csr
+
 # IDE
 .vscode
 .idea
